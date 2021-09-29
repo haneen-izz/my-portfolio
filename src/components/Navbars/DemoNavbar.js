@@ -185,16 +185,26 @@ class DemoNavbar extends React.Component {
                       <DropdownItem to="/profile-page" tag={Link}>
                         Profile
                       </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
-                        Login
-                      </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
-                        Register
-                      </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                <NavItem>
+                    <NavLink
+                      className="nav-link-icon"
+                      href="https://github.com/haneen-izz"
+                      id="tooltip112445449"
+                      target="_blank"
+                    >
+                      <i className="fa fa-github" />
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Github
+                      </span>
+                    </NavLink>
+                    <UncontrolledTooltip delay={0} target="tooltip112445449">
+                      Star me on Github
+                    </UncontrolledTooltip>
+                  </NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
@@ -208,7 +218,7 @@ class DemoNavbar extends React.Component {
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip333589074">
-                      Like us on Facebook
+                      Like me on Facebook
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
@@ -224,7 +234,7 @@ class DemoNavbar extends React.Component {
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip356693867">
-                      Follow us on Instagram
+                      Follow me on Instagram
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
@@ -240,39 +250,8 @@ class DemoNavbar extends React.Component {
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip184698705">
-                      Follow us on Twitter
+                      Follow me on Twitter
                     </UncontrolledTooltip>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      href="https://github.com/creativetimofficial/argon-design-system-react"
-                      id="tooltip112445449"
-                      target="_blank"
-                    >
-                      <i className="fa fa-github" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Github
-                      </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip112445449">
-                      Star us on Github
-                    </UncontrolledTooltip>
-                  </NavItem>
-                  <NavItem className="d-none d-lg-block ml-lg-4">
-                    <Button
-                      className="btn-neutral btn-icon"
-                      color="default"
-                      href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-navbar"
-                      target="_blank"
-                    >
-                      <span className="btn-inner--icon">
-                        <i className="fa fa-cloud-download mr-2" />
-                      </span>
-                      <span className="nav-link-inner--text ml-1">
-                        Download
-                      </span>
-                    </Button>
                   </NavItem>
                 </Nav>
               </UncontrolledCollapse>

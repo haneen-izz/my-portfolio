@@ -29,7 +29,7 @@ import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 
-ReactDOM.render(
+ReactDOM.render( 
   <BrowserRouter>
     <Switch>
       <Route path="/" exact render={props => <Index {...props} />} />
